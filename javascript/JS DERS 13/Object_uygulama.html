@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <title>Object uygulama</title>
+</head>
+<body>
+    <script>
+var ali= {
+    ad:"Ali",
+    soyad:"yılmaz",
+    cinsiyet:"erkek",
+    adres:"Bursa nilüfer",
+    meslek:"pc müh",
+    diller:["ingilizce","Almanca"],
+    hobiler:["sinema","spor","kitap okumak"]
+};
+console.log(ali);
+console.log(ali.diller.length);
+
+ali.hobiler.forEach(function(hobi){console.log(hobi);});
+
+console.log(ali.hobiler[0]);
+console.log(ali.hobiler[1]);
+console.log(ali.hobiler[2]);
+
+var personel = [ 
+{
+    ad:"Ali",
+    soyad:"yılmaz",
+    cinsiyet:"erkek",
+    adres:"Bursa nilüfer",
+    meslek:"pc müh",
+    diller:["ingilizce","Almanca"],
+    hobiler:["sinema","spor","kitap okumak"]
+},
+
+{
+    ad:"Melike",
+    soyad:"Özcan",
+    cinsiyet:"erkek",
+    adres:"Bursa nilüfer",
+    meslek:"pc müh",
+    diller:["ingilizce","Almanca"],
+    hobiler:["sinema","spor","kitap okumak"]
+},
+
+{
+    ad:"Muhammedcan",
+    soyad:"Özcan",
+    cinsiyet:"erkek",
+    adres:"Bursa nilüfer",
+    meslek:"pc müh",
+    diller:["ingilizce","Almanca"],
+    hobiler:["sinema","spor","kitap okumak"]
+}
+];
+console.log(personel.length)
+console.log("*******************");
+personel.forEach(function(personel){console.log(personel.ad+" "+personel.soyad)
+personel.diller.forEach(function(dil){console.log(dil);
+});
+console.log("*******************");
+});
+
+
+    </script>
+</body>
+</html>

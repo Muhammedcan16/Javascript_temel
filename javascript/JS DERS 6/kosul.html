@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Koşul ifadeleri</title>
+</head>
+<body>
+    <script>
+        var otomatik = "yes";
+console.log("koşul operatorleri");
+if(otomatik=='yes'){
+    console.log('araç otomatiktir.');
+}
+else{
+    console.log('araç otomatik değildir');
+}
+
+araba=false;
+if(araba){
+    console.log("doğru");
+}
+
+if(araba==false){
+    console.log("false");
+}
+
+if(10=="10"){
+    console.log("sayılar eşittir");
+}
+
+if(10==="10"){
+    console.log("sayılar eşittir");
+}
+else{
+    console.log("değerler aynı türde değil");
+}
+
+var vites= "1";
+
+if(vites=="1"){
+    console.log("arac otomatik");
+}
+else{
+    console.log("arac manuel");
+}
+console.log("-------------");
+
+var vite= "4";
+
+if(vite=="1"){
+    console.log("arac otomatik");
+}
+else if(vite=="2") {
+    console.log("arac manuel");
+}
+else {
+console.log("yanlış ifade ");
+}
+console.log("-------------");
+var a=4;
+
+switch(a){
+    case "1":
+        console.log("arac manuel");
+    case "4": 
+         console.log("arac otomatik");
+    default:
+        console.log("yanlış değer");
+}
+
+    </script>
+</body>
+</html>

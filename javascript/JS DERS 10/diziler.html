@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diziler</title>
+</head>
+<body>
+    
+
+    <script>
+var a ="1";
+var b ="2";
+var c ="3";//uzun sürecek
+
+var marka = ["opel","astra","mazda","bmw","renault"];
+var model=["corsa","yaris","cx-3","clio","her"];
+console.log(marka[0]);
+console.log(model[1]);
+model[0]="Astra";
+console.log(model);//corsa astra oldu
+
+var a=["toyota","auris",42,true];
+console.log(a);
+a.push("blue");//en sona ekledi
+console.log(a);
+a.unshift('HB');//en başa ekledi
+console.log(a);
+a.pop();//en sondaki elemanı siler
+console.log(a);
+a.shift();//en baştakini siler
+console.log(a);
+
+console.log("-------------------");
+var mark = ["opel","astra","mazda","bmw","renault"];
+
+for (var i=0;i<mark.length;i++){
+    console.log(mark[i]);
+}
+
+if(mark.indexOf("mazda")!==-1){
+    console.log("bulundu");
+}
+else{
+    console.log("bulunamadı");
+}
+
+
+
+    </script>
+</body>
+</html>

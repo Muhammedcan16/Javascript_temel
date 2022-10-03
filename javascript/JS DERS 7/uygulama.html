@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Koşul uygulama</title>
+</head>
+<body>
+    
+
+    <script>
+var a=prompt("Doğduğunuz yılı giriniz");
+if(a>2004){
+    console.log((2022-a),("Yaşındasınız"));
+    console.log("Yaşınız 18 in altında olduğu için ehliyet alamazsınız");
+    console.log(18-(2022-a),"yıl sonra tekrar ehliyet alamyı deneyiniz.")
+}
+else if (a=2004){
+    console.log((2022-a) ,("Yaşındasınız"));
+    console.log("18 yaşındasınız ehliyet alabilirsiniz.")
+}
+else{
+    console.log((2022-a) ,("Yaşındasınız"));
+    console.log("18 yaşından büyüksünüz ehliyet alabilirsiniz.")
+}
+
+console.log("--------------");
+
+var b=prompt("Girdiğiniz ay değerine göre size hangi mevsimde olduğunuzu yazdıracağız. AY giriniz(1 ile 12 arasında sayı tuşlayınız):") ;
+switch(b){
+case "11":
+case "12":
+case "1": 
+console.log("Kış mevsimindesiniz.");
+break;
+case "2":
+case "3":
+case "4":
+console.log("İlkbahar mevsimindesiniz");
+break;
+case "5":
+case "6":
+case "7":
+console.log("Yaz mevsimindesiniz");
+break;
+case "8":
+case "9":
+case "10":
+console.log("Sonbahar mevsimindesiniz");
+break;
+default:
+    console.log("Hatalı giriş yaptınız.");
+    break;
+}
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <title>Object</title>
+</head>
+<body>
+    <script>
+var opel={
+    marka: 'opel',
+    model:'corsa',
+    yıl:'2015',
+};
+console.log(opel.marka);//opel nesnesinin içindeki marka içinde yazanı bana göster
+console.log(opel.marka +" "+ opel.yıl);
+
+var toyota = new Object();
+toyota.marka='Toyota';
+toyota.model="Yaris";
+toyota.yil="2012";
+toyota.renk="kırmızı";
+toyota.otomatik=true;
+console.log(toyota);
+console.log(toyota.model);
+toyota.model="Auris";
+console.log(toyota);
+
+
+var arabalar= [
+    {
+    marka: 'opel',
+    model:'corsa',
+    yıl:'2015',
+}, 
+{
+    marka: 'Bmw',
+    model:'123',
+    yıl:'2025',
+}
+];
+console.log(arabalar);
+
+
+
+
+    </script>
+</body>
+</html>

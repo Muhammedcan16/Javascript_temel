@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <title>diziler uygulama</title>
+</head>
+<body>
+    <script>
+var now=2018;
+var models=["Toyota","Mazda","Mercedes","Opel"];
+var years=["2015","2012","2016","2014"];
+
+
+console.log(models);
+console.log("-----------");
+console.log(models[0],years[0],"model ve ",now-years[0],"yaşında bir araçtır.");
+console.log(models[1],years[1],"model ve ",now-years[1],"yaşında bir araçtır.");
+console.log(models[2],years[2],"model ve ",now-years[2],"yaşında bir araçtır.");
+console.log(models[3],years[3],"model ve ",now-years[3],"yaşında bir araçtır.");
+console.log("-----------");
+var a=prompt("Model ekleyiniz:");
+var b=prompt("Yıl ekleyiniz:");
+
+models.push(a);
+years.push(b);
+console.log(models);
+console.log(years);
+
+console.log("---------- Hocamız nasıl yaptı-------------");
+
+for(var i=0; i<models.lenght;i++){
+    console.log(models[i]);
+}
+
+models.forEach(function(element) {
+console.log(element);
+});
+
+for(var i=0; i<models.lenght; i++) {
+    console.log(models[i]," ", years[i]," model ve", now-years[i],"yaşında bir araçtır.");
+}
+
+models.push(a);
+years.push(b);
+console.log(models);
+console.log(years);
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fonkisyonlar örnek</title>
+</head>
+<body>
+    <script>
+//************************
+function tek(x){
+
+if(x%2==0){
+    console.log("sayı çifttir");
+}
+else{
+    console.log("sayı tektir");
+}
+}
+
+var x=prompt("Sayı giriniz");
+var sonuc=tek(x);
+
+
+
+//4 --> 4*3*2*1 = 24 *******************
+function faktöriyel(y){
+var sonuc =1;
+for (var i=2; i<=y ; i++){
+    sonuc*=i;
+}
+return sonuc;
+}
+console.log(faktöriyel(4));
+
+//*************************************
+function yazdir(yaz){
+console.log(yaz);
+}
+
+yazdir(merhaba = ["1","2","3"]);
+//*****************************************
+
+var sayilar=["0","1","2","3","4","5"];
+function yaz(dizi){
+    dizi.forEach(function(item){console.log(item);});
+}
+yaz(sayilar);
+
+
+
+
+    </script>
+</body>
+</html>

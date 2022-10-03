@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Döngüler örnek</title>
+</head>
+<body>
+    
+
+
+    <script>
+console.log("-----------------");
+for (var i=10;i<=100;i++){
+    console.log(i);
+}
+
+console.log("-------------------");
+
+var x=10;
+while(x<=100){
+    console.log(x);
+    x=x+5;
+}
+
+console.log("----------------");
+
+var names="guess";
+var sifres="1234";
+var login= false;
+while(login==false){
+
+var name=prompt("kullanıcı adı:");
+var sifre=prompt("Sifre:");
+
+if (name==names && sifre==sifres){
+    console.log("Giriş başarılı");
+    login=true;
+}
+else{
+    console.log("giriş başarısız");
+}
+}
+
+
+    </script>
+</body>
+</html>
